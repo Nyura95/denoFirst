@@ -1,6 +1,7 @@
 import { users } from "../dbb.ts";
 import { User } from "../models/users.ts";
 
+/** This is a description of the foo function. */
 // @ts-ignore
 export const getUsers = ({ response }) => {
   response.body = users;

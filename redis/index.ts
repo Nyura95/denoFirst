@@ -1,3 +1,4 @@
+// Pending password
 import { connect } from "https://denopkg.com/keroxp/deno-redis/mod.ts";
 import { config } from "https://deno.land/x/dotenv/mod.ts";
 
