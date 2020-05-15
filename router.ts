@@ -1,9 +1,10 @@
 import { Router } from "https://deno.land/x/oak/mod.ts";
 
-import getUsers from "./handlers/getUsers.ts";
+import { addUsers, getUsers } from "./handlers/users.ts";
 
 const router = new Router();
+router.get("/users", getUsers);
 router
-  .get("/users", getUsers);
+  .post("/users", addUsers);
 
 export default router;
